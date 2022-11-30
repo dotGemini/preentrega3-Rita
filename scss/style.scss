@@ -1,0 +1,97 @@
+/* reset */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// archivos secundarios
+@import "utilidades/mixin";
+@import "utilidades/variables";
+@import "utilidades/condiciones";
+@import "html/index";
+@import "html/pages";
+@import "html/nosotros";
+
+
+/* estilos header */
+
+header{
+    background-color: $background-header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 16.5vh;
+
+    nav{
+        ul{
+            list-style: none;
+            display: inline-flex;
+            margin-bottom: 1rem;
+            gap: 1rem;
+
+            li{
+                a{
+                    color: $text-color;
+                    background-color: $boton-color;
+                    text-decoration: solid;
+                    padding: 0.7rem;
+                    border-radius: 300px;
+                    text-shadow: 3px 2px 5px black;
+                }
+            }
+        }
+    }
+
+    h1{
+        display: none;
+    }
+    .logo-empresa{
+        @include medidas(50%, 50%);
+        
+        margin: 0;
+    }
+}
+
+/* estilos section */
+
+section{
+
+    display: block;
+    @include flex-allcenter;
+    background: $background-section;
+    background: $gradient-section;
+    width: 100%;
+    grid-area: section;
+    
+
+    div{
+        padding: 1.5rem;
+        @include flex-allcenter;
+        flex-direction: column;
+
+        img{
+            width: 35%;
+        }
+    }
+}
+
+footer{
+    background-color: $background-footer;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* estilo main contacto y nosotros */
+
+.mainCont{
+    flex-direction: column;
+    @include flex-allcenter;
+    background-color: $background-main;
+}

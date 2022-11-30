@@ -1,0 +1,16 @@
+/* estilos de index_main _index.scss */ 
+
+.contenedor {
+
+    main{
+        background-color: $background-main;
+
+        .portada{
+            width: 60%;
+            margin: 0 auto;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

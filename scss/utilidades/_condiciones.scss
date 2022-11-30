@@ -1,0 +1,108 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+// condiciones
+
+/* media query mobile*/
+
+@media screen and (max-width:480px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .contenedor, .contNos {
+        @include query-flex-column;
+        width: auto;
+
+        header{
+            background-color: $background-header;
+            @include query-flex-column;
+            
+
+            a{
+                display: flex;
+                justify-content: center;
+
+                margin: 0 auto;
+                padding: 0.7rem;
+            }
+
+            nav{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        main{
+            @include query-flex-column;
+        }
+
+        section{
+            display: none;
+        }
+
+        footer{
+            display: none;
+        }
+
+        .main-dos{
+            @include query-flex-column;
+        }
+    }
+
+
+    
+}
+
+/* media query tablet */ 
+
+@media screen and (max-width:1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .contenedor, .contNos{
+        @include query-flex-column;
+        width: auto;
+
+        header{
+            background-color: $background-header;
+            @include query-flex-column;
+            align-items: center;
+            height: auto;
+
+            a{
+                display: flex;
+                justify-content: center;
+
+                margin: 0 auto;
+                padding: 0.7rem;
+            }
+
+            nav{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        main{
+            @include query-flex-column;
+        }
+
+        footer{
+            display: none;
+        }
+
+        .main-dos{
+            @include query-flex-column;
+        }
+    }
+}

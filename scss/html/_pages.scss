@@ -1,0 +1,73 @@
+/* estilo de pages _pages.scss*/ 
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+.main-dos{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas: 
+        "h2 h2 h2"
+        "img-uno p-uno p-uno"
+        "p-dos p-dos img-dos"
+        "img-tres p-tres p-tres"
+        "section section section";
+
+        justify-content: center;
+        justify-items: center;
+
+        .img-uno{
+            grid-area: img-uno;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+
+        .img-dos{
+            grid-area: img-dos;
+            padding-right: 0.7rem;
+            padding-left: 0.7rem;
+        }
+
+        .img-tres{
+            grid-area: img-tres;
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+
+        .p-uno{
+            grid-area: p-uno;
+            @extend %pGrid;
+        }
+
+        .p-dos{
+            grid-area: p-dos;
+            @extend %pGrid;
+        }
+
+        .p-tres{
+            grid-area: p-tres;
+            @extend %pGrid;
+        }
+
+        h2 {
+            grid-area: h2;
+            color: $text-color;
+            text-decoration: solid underline $text-color;
+            text-align: center;
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .img-uno, .img-dos, .img-tres {
+            @include medidas(15rem, 15rem);
+        }
+
+        .img-suno {
+            @include medidas(100%, 100%);
+        }
+        
+        .img-sdos {
+            @include medidas(70%, 70%);
+        }
+}

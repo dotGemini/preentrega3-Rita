@@ -1,0 +1,31 @@
+// mixin con parametros
+
+@mixin medidas ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+
+// mixin sin parametros
+
+@mixin flex-allcenter{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin query-flex-column{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@mixin grid-style {
+    color: $text-color;
+    text-align: center;
+    padding: 4rem 4rem 2rem 4rem;   
+}

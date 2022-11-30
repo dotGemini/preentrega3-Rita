@@ -1,0 +1,16 @@
+/* estilos nosotros _nosotros.scss */ 
+@import "../utilidades/variables";
+
+.about-us{
+    margin: 1.2rem 6rem 3rem 6rem;
+    padding: 1.2rem;
+    color: $text-color;
+
+    h2{
+        margin-bottom: 3rem;
+        padding: 1.2rem;
+        text-decoration: solid underline $text-color;
+    }
+}
+
+
