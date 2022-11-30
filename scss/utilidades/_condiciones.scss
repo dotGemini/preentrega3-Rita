@@ -18,12 +18,11 @@
 
         header{
             background-color: $background-header;
-            @include query-flex-column;
-            
+            display: flex;
+            justify-content: space-around;           
 
             a{
                 display: flex;
-                justify-content: center;
 
                 margin: 0 auto;
                 padding: 0.7rem;
@@ -73,13 +72,12 @@
 
         header{
             background-color: $background-header;
-            @include query-flex-column;
-            align-items: center;
+            display: flex;
+            justify-content: space-around;
             height: auto;
 
             a{
                 display: flex;
-                justify-content: center;
 
                 margin: 0 auto;
                 padding: 0.7rem;

@@ -12,7 +12,6 @@
     box-sizing: border-box; }
   .contenedor, .contNos {
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -20,20 +19,15 @@
     .contenedor header, .contNos header {
       background-color: #636567;
       display: flex;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center; }
+      justify-content: space-around; }
       .contenedor header a, .contNos header a {
         display: flex;
-        justify-content: center;
         margin: 0 auto;
         padding: 0.7rem; }
       .contenedor header nav ul, .contNos header nav ul {
         display: flex;
         flex-wrap: wrap; }
     .contenedor main, .contNos main {
-      display: flex;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -43,7 +37,6 @@
     .contenedor footer, .contNos footer {
       display: none; }
     .contenedor .main-dos, .contNos .main-dos {
-      display: flex;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -57,7 +50,6 @@
     box-sizing: border-box; }
   .contenedor, .contNos {
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -65,15 +57,10 @@
     .contenedor header, .contNos header {
       background-color: #636567;
       display: flex;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
+      justify-content: space-around;
       height: auto; }
       .contenedor header a, .contNos header a {
         display: flex;
-        justify-content: center;
         margin: 0 auto;
         padding: 0.7rem; }
       .contenedor header nav ul, .contNos header nav ul {
@@ -81,14 +68,12 @@
         flex-wrap: wrap; }
     .contenedor main, .contNos main {
       display: flex;
-      display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center; }
     .contenedor footer, .contNos footer {
       display: none; }
     .contenedor .main-dos, .contNos .main-dos {
-      display: flex;
       display: flex;
       flex-direction: column;
       justify-content: center;
