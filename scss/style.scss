@@ -22,7 +22,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    height: 16.5vh;
+    height: 20vh;
 
     nav{
         ul{
@@ -94,4 +94,5 @@ footer{
     flex-direction: column;
     @include flex-allcenter;
     background-color: $background-main;
+    color: $text-color;
 }

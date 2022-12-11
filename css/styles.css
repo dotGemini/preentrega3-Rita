@@ -10,37 +10,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-  .contenedor, .contNos {
+  .contenedor, .contNos, .contenedorIndex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+    align-items: initial;
     width: auto; }
-    .contenedor header, .contNos header {
+    .contenedor header, .contNos header, .contenedorIndex header {
       background-color: #636567;
       display: flex;
-      justify-content: space-around; }
-      .contenedor header a, .contNos header a {
+      justify-content: space-around;
+      height: 15vh; }
+      .contenedor header a, .contNos header a, .contenedorIndex header a {
         display: flex;
         margin: 0 auto;
         padding: 0.7rem; }
-      .contenedor header nav ul, .contNos header nav ul {
+      .contenedor header nav ul, .contNos header nav ul, .contenedorIndex header nav ul {
         display: flex;
         flex-wrap: wrap; }
-    .contenedor main, .contNos main {
+    .contenedor main, .contNos main, .contenedorIndex main {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: center; }
-    .contenedor section, .contNos section {
+      text-align: center;
+      padding-top: 1rem; }
+    .contenedor section, .contNos section, .contenedorIndex section {
       display: none; }
-    .contenedor footer, .contNos footer {
+    .contenedor footer, .contNos footer, .contenedorIndex footer {
       display: none; }
-    .contenedor .main-dos, .contNos .main-dos {
+    .contenedor .main-dos, .contNos .main-dos, .contenedorIndex .main-dos {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: center; } }
+      text-align: center;
+      background-color: #3F4143; }
+  .contenedorIndex main {
+    height: 85vh; } }
 
 /* media query tablet */
 @media screen and (max-width: 1024px) {
@@ -48,45 +51,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-  .contenedor, .contNos {
+  .contenedor, .contNos, .contenedorIndex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     width: auto; }
-    .contenedor header, .contNos header {
+    .contenedor header, .contNos header, .contenedorIndex header {
       background-color: #636567;
       display: flex;
       justify-content: space-around;
       height: auto; }
-      .contenedor header a, .contNos header a {
+      .contenedor header a, .contNos header a, .contenedorIndex header a {
         display: flex;
         margin: 0 auto;
         padding: 0.7rem; }
-      .contenedor header nav ul, .contNos header nav ul {
+      .contenedor header nav ul, .contNos header nav ul, .contenedorIndex header nav ul {
         display: flex;
         flex-wrap: wrap; }
-    .contenedor main, .contNos main {
+    .contenedor main, .contNos main, .contenedorIndex main {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       text-align: center; }
-    .contenedor footer, .contNos footer {
+      .contenedor main section, .contNos main section, .contenedorIndex main section {
+        position: sticky;
+        bottom: 0; }
+    .contenedor footer, .contNos footer, .contenedorIndex footer {
       display: none; }
-    .contenedor .main-dos, .contNos .main-dos {
+    .contenedor .main-dos, .contNos .main-dos, .contenedorIndex .main-dos {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: center; } }
+      text-align: center;
+      background-color: #3F4143; }
+  .contenedorIndex main {
+    height: 83vh; }
+    .contenedorIndex main section {
+      position: absolute;
+      bottom: 0; } }
 
 /* estilos de index_main _index.scss */
-.contenedor main {
+.contenedorIndex main {
   background-color: #3F4143; }
-  .contenedor main .portada {
+  .contenedorIndex main .portada {
     width: 60%;
     margin: 0 auto; }
-  .contenedor main p {
-    text-align: center; }
+  .contenedorIndex main p {
+    text-align: center;
+    color: whitesmoke; }
 
 /* estilo de pages _pages.scss*/
 .main-dos .p-uno, .main-dos .p-dos, .main-dos .p-tres {
@@ -152,7 +162,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  height: 16.5vh; }
+  height: 20vh; }
   header nav ul {
     list-style: none;
     display: inline-flex;
@@ -213,4 +223,5 @@ footer {
   justify-items: center;
   align-items: center;
   text-align: center;
-  background-color: #3F4143; }
+  background-color: #3F4143;
+  color: whitesmoke; }

@@ -1,9 +1,10 @@
 /* estilos de index_main _index.scss */ 
 
-.contenedor {
+.contenedorIndex {
 
     main{
         background-color: $background-main;
+        
 
         .portada{
             width: 60%;
@@ -11,6 +12,7 @@
         }
         p{
             text-align: center;
+            color: $text-color;
         }
     }
 }

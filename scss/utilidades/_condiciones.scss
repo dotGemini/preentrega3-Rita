@@ -12,14 +12,17 @@
         box-sizing: border-box;
     }
 
-    .contenedor, .contNos {
+    .contenedor, .contNos, .contenedorIndex {
         @include query-flex-column;
+        align-items: initial;
         width: auto;
+        
 
         header{
             background-color: $background-header;
             display: flex;
-            justify-content: space-around;           
+            justify-content: space-around;
+            height: 15vh;        
 
             a{
                 display: flex;
@@ -38,6 +41,9 @@
 
         main{
             @include query-flex-column;
+            padding-top: 1rem;
+            
+             
         }
 
         section{
@@ -50,10 +56,15 @@
 
         .main-dos{
             @include query-flex-column;
+            background-color: $background-main;
         }
     }
 
-
+    .contenedorIndex {
+        main {
+            height: 85vh;
+        }
+    }
     
 }
 
@@ -66,7 +77,7 @@
         box-sizing: border-box;
     }
 
-    .contenedor, .contNos{
+    .contenedor, .contNos, .contenedorIndex{
         @include query-flex-column;
         width: auto;
 
@@ -93,6 +104,12 @@
 
         main{
             @include query-flex-column;
+
+            section {
+                position: sticky;
+                bottom: 0;
+            }
+            
         }
 
         footer{
@@ -101,6 +118,18 @@
 
         .main-dos{
             @include query-flex-column;
+            background-color: $background-main;
+        }
+    }
+
+    .contenedorIndex {
+        main {
+            height: 83vh;
+
+            section{
+                position: absolute;
+                bottom: 0;
+            }
         }
     }
 }
