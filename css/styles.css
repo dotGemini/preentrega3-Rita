@@ -105,6 +105,7 @@
   padding: 4rem 4rem 2rem 4rem; }
 
 .main-dos {
+  background-color: #3F4143;
   display: grid;
   grid-template-columns: 2fr;
   grid-template-areas: "h2 h2 h2" "img-uno p-uno p-uno" "p-dos p-dos img-dos" "img-tres p-tres p-tres" "section section section";
@@ -146,14 +147,16 @@
     height: 70%; }
 
 /* estilos nosotros _nosotros.scss */
-.about-us {
-  margin: 1.2rem 6rem 3rem 6rem;
-  padding: 1.2rem;
-  color: whitesmoke; }
-  .about-us h2 {
-    margin-bottom: 3rem;
+.mainCont {
+  background-color: #3F4143; }
+  .mainCont .about-us {
+    margin: 1.2rem 6rem 3rem 6rem;
     padding: 1.2rem;
-    text-decoration: solid underline whitesmoke; }
+    color: whitesmoke; }
+    .mainCont .about-us h2 {
+      margin-bottom: 3rem;
+      padding: 1.2rem;
+      text-decoration: solid underline whitesmoke; }
 
 /* estilos header */
 header {
